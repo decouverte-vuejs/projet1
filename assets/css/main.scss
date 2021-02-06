@@ -6,3 +6,26 @@ body {
     max-width: 1600px;
     background-color: white;
 }
+
+.container{
+    display:flex;
+    background-color: transparent;
+    .logo{
+        display: flex;
+        width: 50%;
+    }
+    .navlist{
+        display: flex;
+        width: 50%;
+        ul{
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            margin-left: 2rem;
+            list-style-type: none;
+        }
+    }
+}
