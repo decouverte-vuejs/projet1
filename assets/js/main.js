@@ -30,3 +30,29 @@ Vue.component('reservation', {
     `
 })
 new Vue({ el: '#reservation-component' })
+
+Vue.component('welcome', {
+    template: `
+    <div id="welcome-content">
+        <div class="image-container">
+            <div class="image image1">
+                <img src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/07/welcome-1-902x1024.jpg" alt>
+            </div>
+            <div class="image image2">
+                <img src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/07/welcome-2-1024x705.jpg" alt>
+            </div>
+        </div>
+
+        <div class="text-container">
+            <span class="legend">Raising comfort to the highest level</span>
+            <h2>Welcome to Luviana Hotel Resort</h2>
+            <div class="description">
+                <p>The Hotel Luviana is the right choice for visitors who are searching for a combination of charm and a convenient position from where to explore surroundings.</p>
+                <p>The rooms are arranged on the first, second and third floors. On the top floor, there is also a charming terrace or solarium available for the use of guests, from where you can enjoy the view.</p>
+                <a href="#" class="btn btn-main">Read more</a>
+            </div>
+        </div>
+    </div>
+    `
+})
+new Vue({ el: '#welcome-component' })
