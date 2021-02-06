@@ -5,4 +5,68 @@ html {
 body {
     max-width: 1600px;
     background-color: white;
+    margin: auto;
+}
+
+.slim-component {
+    max-width: 1170px;
+    margin: auto;
+}
+
+
+#reservation-component {
+    color: #e5e8eb;
+    background-color: #25335e;
+
+    form {
+        display: flex;
+        flex-direction: row;
+        
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 2rem;
+
+            .form-part {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            &>.form-part {
+                max-width: calc(33.33% - 1rem);
+            }
+            .form-part-group {
+                flex-direction: row;
+                justify-content: space-between;
+
+                &>.form-part {
+                    max-width: calc(51% - 1rem);
+                }
+            }
+        }
+
+        label {
+            color: #e5e8eb;
+            padding: 0 0 0.5rem 0;
+        }
+
+        input, select {
+            min-height: 2rem;
+            height: 100%;
+            background-color: #252e59;
+            color: #4e6b8d;
+            border: 1px solid #323f69;
+        }
+
+        button {
+            background-color: #3f9cc1;
+            color: white;
+            border: none;
+            text-transform: uppercase;
+            padding: 2rem;
+            font-weight: bold;
+        }
+    }
 }
