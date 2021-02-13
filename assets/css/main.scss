@@ -38,6 +38,9 @@ h2 {
 p:not(:last-of-type) {
     margin: 0 0 1.5em;
 }
+select {
+    font-size: 1rem;
+}
 .btn {
     border-radius: 100rem;
     padding: 1rem 2.25rem;
@@ -114,6 +117,7 @@ p:not(:last-of-type) {
         }
 
         label {
+            font-size: 0.9rem;
             color: #e5e8eb;
             padding: 0 0 0.5rem 0;
         }
@@ -126,13 +130,29 @@ p:not(:last-of-type) {
             border: 1px solid #323f69;
         }
 
+        select {
+            @include select-hide-arrow;
+            @include select-white-arrow;
+        }
+
         button {
             background-color: #3f9cc1;
             color: white;
             border: none;
             text-transform: uppercase;
-            padding: 2rem;
+            padding: 2rem 4rem;
             font-weight: bold;
+            font-size: 1.125rem;
+            transition: all .3s ease;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:hover, &:focus {
+                background-color: #c1b086;
+                border-color: #c1b086;
+            }
         }
     }
 }
@@ -140,8 +160,6 @@ p:not(:last-of-type) {
 #welcome-component {
     #welcome-content {
         min-height: 30rem;
-        // display: flex;
-        // flex-direction: row;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 3rem;
@@ -153,7 +171,8 @@ p:not(:last-of-type) {
         padding: 6rem 0;
     }
 
-    .image-container, .text-container {
+    .image-container, 
+    .text-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
