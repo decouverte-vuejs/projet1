@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans&display=swap');
+
 html {
-    background-color: grey;
+    background-color: #eff6fb;
 }
 
 body {
+    font-family: "Open Sans",sans-serif;
     max-width: 1600px;
     background-color: white;
     margin: auto;
+    line-height: 1.75;
 }
 
 .slim-component {
@@ -14,6 +18,16 @@ body {
 }
 
 // commun
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Noto Serif",serif;
+}
+h2 {
+    font-weight: 400;
+}
+.legend {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
 h1, h2, h3, h4, h5, h6, .legend {
     color: #222;
 }
@@ -25,7 +39,7 @@ p:not(:last-of-type) {
 }
 .btn {
     border-radius: 100rem;
-    padding: 1rem 2rem;
+    padding: 1rem 2.25rem;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.75rem;
@@ -33,6 +47,8 @@ p:not(:last-of-type) {
     margin-top: 3rem;
     border: 1px solid transparent;
     transition: all .3s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .btn-transparent {
     background-color: transparent;
@@ -126,8 +142,14 @@ p:not(:last-of-type) {
         // display: flex;
         // flex-direction: row;
         display: grid;
-        grid-template-columns: 80fr 100fr;
+        grid-template-columns: 1fr 1fr;
         column-gap: 3rem;
+
+        background-image: url('https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/07/image_welcome.png');
+        background-position: 25% 10%;
+        background-size: auto;
+        background-repeat: no-repeat;
+        padding: 6rem 0;
     }
 
     .image-container, .text-container {
@@ -138,10 +160,7 @@ p:not(:last-of-type) {
     .image-container {
         width: 100%;
         position: relative;
-        background-image: url('https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/07/image_welcome.png');
-        background-position: top right;
-        background-size: auto;
-        background-repeat: no-repeat;
+
 
         .image {
             position: absolute;
@@ -180,8 +199,12 @@ p:not(:last-of-type) {
             }
 
         }
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
         .description {
-            margin-left: 3rem;
+            margin-left: 3.5rem;
             color: #5f6060;
         }
     }
