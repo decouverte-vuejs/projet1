@@ -1,8 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans&display=swap');
+
 html {
-    background-color: grey;
+    background-color: #eff6fb;
 }
 
 body {
+    font-family: "Open Sans",sans-serif;
     max-width: 1600px;
     background-color: white;
+    margin: auto;
+    line-height: 1.75;
+}
+
+.slim-component {
+    max-width: 1170px;
+    margin: auto;
+}
+
+// commun
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Noto Serif",serif;
+}
+h2 {
+    font-weight: 400;
+}
+.legend {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+h1, h2, h3, h4, h5, h6, .legend {
+    color: #222;
+}
+h2 {
+    font-size: 2rem;
+}
+p:not(:last-of-type) {
+    margin: 0 0 1.5em;
+}
+.btn {
+    border-radius: 100rem;
+    padding: 1rem 2.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: inline-flex;
+    margin-top: 3rem;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.btn-transparent {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+
+    &:hover, &:focus {
+        background-color: #c1b086;
+        border-color: #c1b086;
+    }
+}
+.btn-main {
+    background-color: #c1b086;
+    border-color: #c1b086;
+    color: white;
+
+    &:hover, &:focus {
+        background-color: #252e59;
+    }
+
+    &:hover {
+        border-color: #252e59;
+    }
+
+    &:focus {
+        border-color: red;
+    }
+}
+
+// composants
+#reservation-component {
+    color: #e5e8eb;
+    background-color: #25335e;
+
+    form {
+        display: flex;
+        flex-direction: row;
+        
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 2rem;
+
+            .form-part {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            &>.form-part {
+                max-width: calc(33.33% - 1rem);
+            }
+            .form-part-group {
+                flex-direction: row;
+                justify-content: space-between;
+
+                &>.form-part {
+                    max-width: calc(51% - 1rem);
+                }
+            }
+        }
+
+        label {
+            color: #e5e8eb;
+            padding: 0 0 0.5rem 0;
+        }
+
+        input, select {
+            min-height: 2rem;
+            height: 100%;
+            background-color: #252e59;
+            color: #4e6b8d;
+            border: 1px solid #323f69;
+        }
+
+        button {
+            background-color: #3f9cc1;
+            color: white;
+            border: none;
+            text-transform: uppercase;
+            padding: 2rem;
+            font-weight: bold;
+        }
+    }
+}
+
+#welcome-component {
+    #welcome-content {
+        min-height: 30rem;
+        // display: flex;
+        // flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+
+        background-image: url('https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/07/image_welcome.png');
+        background-position: 25% 10%;
+        background-size: auto;
+        background-repeat: no-repeat;
+        padding: 6rem 0;
+    }
+
+    .image-container, .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image-container {
+        width: 100%;
+        position: relative;
+
+
+        .image {
+            position: absolute;
+            bottom: 0;
+            
+            img {
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .image1 {
+            width: 60%;
+            height: 100%;
+            left: 0;
+        }
+        .image2 {
+            width: 65%;
+            right: 0;
+        }
+    }
+
+    .text-container {
+        .legend {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+
+            &::before {
+                display: flex;
+                content: '';
+                width: 4.5rem;
+                height: 4px;
+                background-color: #c1b086;
+                margin-bottom: 1rem;
+            }
+
+        }
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .description {
+            margin-left: 3.5rem;
+            color: #5f6060;
+        }
+    }
 }
