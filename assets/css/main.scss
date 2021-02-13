@@ -1,3 +1,4 @@
+@import 'mixin.scss';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans&display=swap');
 
 html {
@@ -10,11 +11,6 @@ body {
     background-color: white;
     margin: auto;
     line-height: 1.75;
-}
-
-@mixin box-shadow {
-    -webkit-box-shadow: 0px 13px 43px 0px rgba(6,28,52,.23);
-    box-shadow: 0px 13px 43px 0px rgba(6,28,52,.23);
 }
 
 .slim-component {
@@ -63,6 +59,7 @@ p:not(:last-of-type) {
     &:hover, &:focus {
         background-color: #c1b086;
         border-color: #c1b086;
+        text-decoration: underline;
     }
 }
 .btn-main {
@@ -73,11 +70,9 @@ p:not(:last-of-type) {
     &:hover, &:focus {
         background-color: #252e59;
     }
-
     &:hover {
         border-color: #252e59;
     }
-
     &:focus {
         border-color: red;
     }
