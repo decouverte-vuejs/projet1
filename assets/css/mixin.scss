@@ -1,0 +1,22 @@
+@mixin box-shadow {
+    -webkit-box-shadow: 0px 13px 43px 0px rgba(6,28,52,.23);
+    box-shadow: 0px 13px 43px 0px rgba(6,28,52,.23);
+}
+
+@mixin select-hide-arrow {
+    // cache les flèches natives
+    -moz-appearance:none; // Firefox
+    -webkit-appearance:none; // Safari et Chrome
+    appearance:none;
+
+    &::-ms-expand { 
+        display: none; 
+    }
+}
+
+@mixin select-white-arrow {
+    background-image: url("https://themes.getmotopress.com/luviana/wp-content/themes/luviana/images/chevron-down-solid-fp.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    background-size: 0.75rem;
+};
