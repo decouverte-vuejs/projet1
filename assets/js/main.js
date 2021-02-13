@@ -23,17 +23,18 @@ Vue.component('navb', {
                     <li>Contact</li>
                 </a>
             </ul>
-            <ul>
+            <div class="barre"></div>
+            <div class="pictureNav">
                 <a href="#">
-                    <li><img src="assets/picture/instagram.svg"></li>
+                    <img src="assets/picture/instagram.svg">
                 </a>    
                 <a href="#">
-                    <li><img src="assets/picture/tripadvisor.svg"></li>
+                    <img src="assets/picture/tripadvisor.svg">
                 </a>    
                 <a href="#">
-                    <li><img src="assets/picture/foursquare.svg"></li>
+                    <img src="assets/picture/foursquare.svg">
                 </a>    
-            </ul>
+            </div>
         </div>
     </div>`
 })
