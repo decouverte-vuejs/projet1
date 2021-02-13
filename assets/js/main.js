@@ -56,3 +56,53 @@ Vue.component('welcome', {
     `
 })
 new Vue({ el: '#welcome-component' })
+
+Vue.component('amenities', {
+    template: `
+    <div id="amenities-content">
+        <div class="amenities-background">
+            <img src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/07/amenities-new.jpg" alt>
+        </div>
+        <div class="blue-section">
+            <h2>Our Amenities</h2>
+            <p>The hotel is arranged on three floors without a lift. On the ground floor, apart from the reception, there is a comfortable lounge where you can sit and drink tea.</p>
+
+            <ul>
+                <li>
+                    <span class="fas fa-swimming-pool"></span>
+                    Swimming pool
+                </li>
+                <li>
+                    <span class="fas fa-spa"></span>
+                    Spa & massage
+                </li>
+                <li>
+                    <span class="fas fa-swimmer"></span>    
+                    Surfing lessons
+                </li>
+                <li>
+                    <span class="fas fa-water"></span>
+                    Diving & snorkling
+                </li>
+                <li>
+                    <span class="fas fa-dumbbell"></span>
+                    Gym & yoga
+                </li>
+                <li>
+                    <span class="fas fa-ship"></span>
+                    Boat tours
+                </li>
+                <li>
+                    <span class="fas fa-microphone"></span>
+                    Conference room
+                </li>
+                <li>
+                    <span class="fas fa-umbrella-beach"></span>
+                    Private Beach
+                </li>
+            </ul>
+        </div>
+    </div>
+    `
+})
+new Vue({ el: '#amenities-component' })

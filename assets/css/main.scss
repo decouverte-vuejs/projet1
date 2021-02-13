@@ -80,6 +80,41 @@ select {
         border-color: red;
     }
 }
+.blue-section {
+    color: white;
+    background-color: #3f9cc1;
+    background-image: url(https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/07/image_testimonials.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    max-width: 585px;
+    padding: 5rem;
+    box-sizing: border-box;
+
+    h1, h2, h3, h4, h5, h6, .legend {
+        color: white;
+    }
+
+    p:last-of-type {
+        padding-bottom: 2rem;
+    }
+    ul, ol {
+        list-style: none;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+
+        li {
+            padding: 0.8rem 0;
+
+            .fa, .fas, .fab {
+                width: 1.5rem;
+                text-align: center;
+                padding-right: 1rem;
+            }
+        }
+    }
+}
 
 // composants
 #reservation-component {
@@ -227,5 +262,28 @@ select {
             margin-left: 3.5rem;
             color: #5f6060;
         }
+    }
+}
+
+#amenities-content {
+    display: flex;
+    position: relative;
+
+    .amenities-background {
+        width: 100%;
+        margin: 4rem 0;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .blue-section {
+        position: absolute;
+        top: 0;
+        right: 12.5rem;
+        // height: 100%;
     }
 }
