@@ -267,6 +267,8 @@ select {
 
 #amenities-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 
     .amenities-background {
@@ -282,8 +284,7 @@ select {
     }
     .blue-section {
         position: absolute;
-        top: 0;
         right: 12.5rem;
-        // height: 100%;
+        overflow: auto;
     }
 }
